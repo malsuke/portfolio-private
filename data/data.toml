@@ -1,0 +1,180 @@
+# 日本語のkeyはダブルクォーテーションで囲む必要があります
+
+[meta]
+imgUrl = "https://pbs.twimg.com/profile_images/1800755600550465536/Y78o8cZC_400x400.jpg"
+title = "Hello"
+desc = "Yuki Ishidaのポートフォリオサイトです"
+
+[profile]
+[profile.detail]
+name = "Yuki Ishida"
+role = "Backend Engineer"
+lang = "php, golang, python, typescript, Javascript"
+infra = "Docker, Network, AWS, Ansible, Terraform"
+
+[profile.sns]
+github = "https://github.com/yuk1-ishida"
+twitter = "https://twitter.com/yuk1-ishida"
+
+[[education]]
+name = "立命館大学 情報理工学部 情報理工学科"
+desc = "セキュリティ・ネットワークコース サイバーセキュリティ研究室"
+start = "2021-04"
+end = "現在"
+
+[[education]]
+name = "滋賀短期大学附属高等学校"
+desc = "理系"
+start = "2018-04"
+end = "2021-03"
+
+
+[[career]]
+name = "PRTIMES 長期インターン"
+desc = "PHP、PHPStan、BigQueryを用いたレガシーコード・開発環境の改善"
+start = "2024-2"
+end = "2024-XX"
+
+[[career]]
+name = "株式会社Flatt Security インターン"
+desc = "1week Webアプリケーションのセキュリティ診断体験"
+start = "2023-09"
+
+[[career]]
+name = "エヌ・エフ・ラボラトリーズ 長期インターン"
+desc = "Python、AWS、Ansible、Terraform、Dockerを用いたセキュリティ演習アプリケーションの開発"
+start = "2023-05"
+end = "2024-02"
+
+[[career]]
+name = "PIXIV SPRING BOOT CAMP 2023"
+desc = "8days インターン PHP用いたWebアプリケーション開発"
+start = "2023-03"
+
+[[career]]
+name = "エヌ・エフ・ラボラトリーズ インターン"
+desc = "10days Ansibleを用いたセキュリティ演習環境の自動構築に挑戦"
+start = "2023-02"
+
+[[career]]
+name = "GMOインターネットグループ セキュリティエンジニアインターン"
+desc = "1week"
+start = "2022-09"
+
+[[career]]
+name = "GMOインターネットグループ インフラエンジニアインターン"
+desc = "1week"
+start = "2022-08"
+end = "2022-09"
+
+[[event]]
+name = "YAPC::Hakodate 2024"
+desc = "学生旅費支援枠で参加"
+start = "2024-10"
+
+[[event]]
+name = "セキュリティ・ミニキャンプ in 山梨 2024"
+desc = "講師"
+start = "2024-10"
+link = "https://www.security-camp.or.jp/minicamp/yamanashi2024.html"
+
+[[event]]
+name = "JANOG54 in 奈良"
+desc = "一般参加"
+start = "2024-07"
+
+[[event]]
+name = "Go Conference 2024"
+desc = "一般参加"
+start = "2024-06"
+link = "https://malsan.hatenablog.com/entry/2024/06/09/074519"
+
+[[event]]
+name = "PHPカンファレンス関西2024"
+desc = "コアスタッフ"
+start = "2023-10"
+end = "2024-02"
+link = "https://lion-rion.hatenablog.com/entry/2024/02/12/234331"
+
+[[event]]
+name = "セキュリティ・ミニキャンプ in 北海道 2023"
+desc = "チューター"
+start = "2023-11"
+
+[[event]]
+name = "Hardening 2023 Generatives"
+desc = "Team : Pig a boo!!"
+start = "2023-10"
+
+[[event]]
+name = "JPHAKCS 2023"
+desc = "HUAWAI賞受賞 Best Hack Day Award受賞 Award Day進出"
+start = "2023-10"
+end = "2023-11"
+
+[[event]]
+name = "第8回千葉大学バグハンティングコンテスト"
+desc = "最優秀賞"
+start = "2023-09"
+end = "2023-10"
+
+[[event]]
+name = "セキュリティ・キャンプ全国大会2023"
+desc = "B(Webセキュリティ)クラス"
+start = "2023-08"
+
+[[event]]
+name = "C2C CTF 2023 (Keio University)"
+desc = "Side Challenge - Second Place Team"
+start = "2023-08"
+
+[[event]]
+name = "SecHack365 2023"
+desc = "学習駆動コース 社会実装ゼミ"
+start = "2023-06"
+end = "2024-03"
+
+[[event]]
+name = "危機管理コンテスト 2023"
+desc = "2次予選敗退"
+start = "2023-04"
+end = "2023-05"
+
+[[event]]
+name = "OPEN HACK U 2023 Spring OSAKA"
+start = "2023-03"
+
+[[event]]
+name = "ICTトラブルシューティングコンテスト"
+desc = "6位"
+start = "2023-03"
+
+[[event]]
+name = "NTTコミュニケーションズ 大阪第7データセンタ見学"
+desc = "大学のサークルにて企画"
+start = "2023-2"
+
+[[event]]
+name = "IROS2022 Kyoto 学生スタッフ"
+start = "2022-10"
+
+[[event]]
+name = "KC3 2022"
+desc = "勉強会名 : OWASP ZAPを使ってWebセキュリティに入門しよう"
+start = "2022-09"
+
+[[event]]
+name = "第7回千葉大学バグハンティングコンテスト"
+desc = "優秀賞"
+start = "2022-08"
+end = "2022-10"
+
+[[event]]
+name = "立命館守山課題研究アドバイザー"
+start = "2022-04"
+end = "2023-03"
+
+[copyright]
+name = "Yuki Ishida"
+year = 2024
+

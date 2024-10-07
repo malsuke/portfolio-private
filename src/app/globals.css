@@ -1,0 +1,17 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  color: #1c3746;
+  -webkit-font-smoothing: antialiased;
+}
+
+body p {
+  font-weight: 400;
+}
+
+.link {
+  text-decoration: none;
+}
