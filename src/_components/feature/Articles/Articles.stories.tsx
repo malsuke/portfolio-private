@@ -4,9 +4,6 @@ import Articles from '.'
 const meta: Meta<typeof Articles> = {
   component: Articles,
   tags: ['autodocs'], // ここを追加
-  argTypes: {
-    articles: { control: 'array' },
-  },
 }
 
 export default meta
