@@ -26,6 +26,12 @@ export async function generateMetadata() {
     title: data.meta.title && data.meta.title,
     description: data.meta.desc && data.meta.desc,
     icons: data.meta.imgUrl && [{ rel: 'icon', url: data.meta.imgUrl }],
+    robots: {
+      index: false,
+      googleBot: {
+        index: false,
+      },
+    },
     openGraph: {
       title: data.meta.title && data.meta.title,
       description: data.meta.desc && data.meta.desc,
