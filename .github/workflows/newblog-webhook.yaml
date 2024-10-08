@@ -15,7 +15,7 @@ jobs:
   check-blog-update:
     runs-on: ubuntu-latest
     outputs:
-      diff: ${{ steps.compare-rss.outputs.diff }}
+      diff: ${{ steps.compare-xml.outputs.diff }}
     steps:
       - name: Download previous xml data
         uses: actions/download-artifact@v3
