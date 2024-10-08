@@ -25,7 +25,6 @@ jobs:
         continue-on-error: true
 
       - name: Fetch Hatena Xml
-        env:
         run: |
           curl -u $HATENA_USER_ID:$HATENA_API_KEY https://blog.hatena.ne.jp/$HATENA_USER_ID/$HATENA_BLOG_URL/atom/entry > current_rss.xml
 
