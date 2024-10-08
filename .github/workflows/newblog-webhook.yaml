@@ -6,6 +6,9 @@ on:
   workflow_dispatch:
 
 env:
+  HATENA_USER_ID: ${{ secrets.HATENA_USER_ID }}
+  HATENA_API_KEY: ${{ secrets.HATENA_API_KEY }}
+  HATENA_BLOG_URL: ${{ secrets.HATENA_BLOG_URL }}
   CLOUDFLARE_WEBHOOK_URL: ${{ secrets.CLOUDFLARE_WEBHOOK_URL }}
 
 jobs:
@@ -23,9 +26,6 @@ jobs:
 
       - name: Fetch Hatena Xml
         env:
-          HATENA_USER_ID: ${{ secrets.HATENA_USER }}
-          HATENA_API_KEY: ${{ secrets.HATENA_TOKEN }}
-          HATENA_BLOG_URL: ${{ secrets.HATENA_BLOG_URL }}
         run: |
           curl -u $HATENA_USER_ID:$HATENA_API_KEY https://blog.hatena.ne.jp/$HATENA_USER_ID/$HATENA_BLOG_URL/atom/entry > current_rss.xml
 
