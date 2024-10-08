@@ -1,0 +1,57 @@
+name: Check Blog Update
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+env:
+  CLOUDFLARE_WEBHOOK_URL: ${{ secrets.CLOUDFLARE_WEBHOOK_URL }}
+
+jobs:
+  check-blog-update:
+    runs-on: ubuntu-latest
+    outputs:
+      diff: ${{ steps.compare-rss.outputs.diff }}
+    steps:
+      - name: Download previous xml data
+        uses: actions/download-artifact@v3
+        with:
+          name: xml_data
+          path: ./previous.xml
+        continue-on-error: true
+
+      - name: Fetch Hatena Xml
+        env:
+          HATENA_USER_ID: ${{ secrets.HATENA_USER }}
+          HATENA_API_KEY: ${{ secrets.HATENA_TOKEN }}
+          HATENA_BLOG_URL: ${{ secrets.HATENA_BLOG_URL }}
+        run: |
+          curl -u $HATENA_USER_ID:$HATENA_API_KEY https://blog.hatena.ne.jp/$HATENA_USER_ID/$HATENA_BLOG_URL/atom/entry > current_rss.xml
+
+      - name: Compare xml and set output
+        id: compare-xml
+        run: |
+          diff -u ./previous.xml ./current_rss.xml > diff.txt
+          if [ -s diff.txt ]; then
+            echo "diff=true" >> $GITHUB_OUTPUT
+          else
+            echo "diff=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Upload xml data
+        uses: actions/upload-artifact@v3
+        with:
+          name: xml_data
+        path: ./current_rss.xml
+
+  webhook-to-cloudflare:
+    runs-on: ubuntu-latest
+    needs: check-blog-update
+    steps:
+      - name: Send Webhook to Cloudflare
+        if: needs.check-blog-update.outputs.diff == 'true'
+        env:
+          CLOUDFLARE_WEBHOOK_URL: ${{ secrets.CLOUDFLARE_WEBHOOK_URL }}
+        run: |
+          curl -X POST $CLOUDFLARE_WEBHOOK_URL
