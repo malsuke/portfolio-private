@@ -42,7 +42,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: xml_data
-        path: ./current_rss.xml
+          path: ./current_rss.xml
 
   webhook-to-cloudflare:
     runs-on: ubuntu-latest
