@@ -31,7 +31,7 @@ jobs:
       - name: Compare xml and set output
         id: compare-xml
         run: |
-          diff -u ./previous.xml ./current_rss.xml > diff.txt
+          diff -u ./previous.xml ./current_rss.xml > diff.txt || true
           if [ -s diff.txt ]; then
             echo "diff=true" >> $GITHUB_OUTPUT
           else
