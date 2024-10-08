@@ -1,0 +1,20 @@
+name: Check Blog Update
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'
+  workflow_dispatch:
+
+env:
+  CLOUDFLARE_WEBHOOK_URL: ${{ secrets.CLOUDFLARE_WEBHOOK_URL }}
+
+jobs:
+  deploy-to-cloudflare:
+    runs-on: ubuntu-latest
+    needs: check-blog-update
+    steps:
+      - name: Send Webhook to Cloudflare
+        env:
+          CLOUDFLARE_WEBHOOK_URL: ${{ secrets.CLOUDFLARE_WEBHOOK_URL }}
+        run: |
+          curl -X POST $CLOUDFLARE_WEBHOOK_URL
