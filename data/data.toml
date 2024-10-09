@@ -14,7 +14,7 @@ infra = "Docker, Network, AWS, Ansible, Terraform"
 
 [profile.sns]
 github = "https://github.com/yuk1-ishida"
-twitter = "https://twitter.com/yuk1-ishida"
+twitter = "https://twitter.com/yuk1_ishida"
 
 [[education]]
 name = "立命館大学 情報理工学部 情報理工学科"
