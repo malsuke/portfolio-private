@@ -1,20 +1,19 @@
 # 日本語のkeyはダブルクォーテーションで囲む必要があります
 
 [meta]
-imgUrl = "https://pbs.twimg.com/profile_images/1800755600550465536/Y78o8cZC_400x400.jpg"
-title = "Hello"
-desc = "Yuki Ishidaのポートフォリオサイトです"
+imgUrl = "https://pbs.twimg.com/profile_images/1784546759861301248/IOerfngF_400x400.jpg"
+title = "malsuke's Portfolio"
+desc = "まるすけのポートフォリオサイトです"
 
 [profile]
 [profile.detail]
-name = "Yuki Ishida"
 role = "Backend Engineer"
 lang = "php, golang, python, typescript, Javascript"
 infra = "Docker, Network, AWS, Ansible, Terraform"
 
 [profile.sns]
-github = "https://github.com/yuk1-ishida"
-twitter = "https://twitter.com/yuk1_ishida"
+github = "https://github.com/malsuke"
+twitter = "https://x.com/malsuke096"
 
 [[education]]
 name = "立命館大学 情報理工学部 情報理工学科"
