@@ -27,6 +27,11 @@ desc = "理系"
 start = "2018-04"
 end = "2021-03"
 
+[[career]]
+name = "ピクシブ株式会社 アルバイト"
+desc = ""
+start = "2024-11"
+end = "2025-XX"
 
 [[career]]
 name = "PRTIMES 長期インターン"
