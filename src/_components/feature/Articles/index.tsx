@@ -42,7 +42,7 @@ const Articles: React.FC<WritingsProps> = ({ articles }) => {
         sx={{
           height: '400px',
           '@media screen and (max-width:600px)': {
-            height: '300px',
+            height: '600px',
           },
         }}
       >
