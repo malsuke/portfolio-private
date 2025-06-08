@@ -3,6 +3,7 @@ import CopyRight from '@/_components/common/CopyRight'
 import EduComponent from '@/_components/common/Edu'
 import EventComponent from '@/_components/common/Event'
 import Header from '@/_components/common/Header/Header'
+import OtherLink from '@/_components/common/OtherLink'
 import ProfileComponent from '@/_components/common/Profile'
 import Articles from '@/_components/feature/Articles'
 import { getBlogItems, type ApiKeys } from '@/libs/hatenablog'
@@ -66,6 +67,7 @@ export default async function Home() {
     <>
       <Header {...data.meta} />
       <ProfileComponent {...data.profile} />
+      <OtherLink Links={data.otherlink} />
       <Articles articles={posts} />
       <EduComponent educations={data.education} />
       <CareerComponent careers={data.career} />

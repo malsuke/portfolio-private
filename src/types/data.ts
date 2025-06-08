@@ -1,7 +1,7 @@
 export type Toml = {
   meta: Meta
   profile: Profile
-  products: Products[]
+  otherlink: OtherLinks[]
   education: Education[]
   career: Career[]
   event: Event[]
@@ -34,7 +34,7 @@ export type Profile = {
   sns: SocialMedia
 }
 
-type Products = {
+export type OtherLinks = {
   name: string
   url: string
 }
