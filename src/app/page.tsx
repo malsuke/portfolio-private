@@ -3,6 +3,7 @@ import CopyRight from '@/_components/common/CopyRight'
 import EduComponent from '@/_components/common/Edu'
 import EventComponent from '@/_components/common/Event'
 import Header from '@/_components/common/Header/Header'
+import OSS from '@/_components/common/OSS'
 import OtherLink from '@/_components/common/OtherLink'
 import ProfileComponent from '@/_components/common/Profile'
 import Articles from '@/_components/feature/Articles'
@@ -69,6 +70,7 @@ export default async function Home() {
       <ProfileComponent {...data.profile} />
       <OtherLink Links={data.otherlink} />
       <Articles articles={posts} />
+      <OSS ossinfo={data.oss} />
       <EduComponent educations={data.education} />
       <CareerComponent careers={data.career} />
       <EventComponent events={data.event} />

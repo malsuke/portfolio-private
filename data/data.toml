@@ -11,6 +11,10 @@ role = "Backend Engineer"
 lang = "php, golang, python, typescript, Javascript"
 infra = "Docker, Network, AWS, Ansible, Terraform"
 
+[[oss]]
+title = "PHPStan: Improve preg_split() function ReturnType #3757"
+url = "https://github.com/phpstan/phpstan-src/pull/3757"
+
 [[otherlink]]
 name = "はてなブログ"
 url = "https://malsan.hatenablog.com/"
