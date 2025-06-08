@@ -11,14 +11,7 @@ type LinksProps = {
 const OtherLink: React.FC<LinksProps> = ({ Links }) => {
   return (
     <Layout title="Links">
-      <Box
-        sx={{
-          height: '400px',
-          '@media screen and (max-width:600px)': {
-            height: '600px',
-          },
-        }}
-      >
+      <Box>
         {Links.map((link: OtherLinks) => (
           <Box
             key={link.url}
