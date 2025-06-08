@@ -41,7 +41,7 @@ github = "https://github.com/malsuke"
 twitter = "https://x.com/malsuke096"
 
 [[education]]
-name = "立命館大学大学院 情報理工学研究科"
+name = "立命館大学大学院 情報理工学研究科 博士前期課程"
 desc = "サイバーセキュリティ研究室"
 start = "2025-04"
 end = "現在"
@@ -103,7 +103,7 @@ start = "2022-08"
 end = "2022-09"
 
 [[event]]
-name = "CNDS Summer 2025"
+name = "CNDS 2025"
 desc = "学生支援登壇 | コンテナを学習環境として貸し出す技術"
 start = "2025-05"
 link = "https://malsan.hatenablog.com/entry/2025/05/24/000320"
