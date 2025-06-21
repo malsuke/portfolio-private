@@ -6,6 +6,7 @@ import Header from '@/_components/common/Header/Header'
 import OSS from '@/_components/common/OSS'
 import OtherLink from '@/_components/common/OtherLink'
 import ProfileComponent from '@/_components/common/Profile'
+import ScholarShip from '@/_components/common/ScholarShip'
 import Articles from '@/_components/feature/Articles'
 import { getBlogItems, type ApiKeys } from '@/libs/hatenablog'
 import parseToml from '@/libs/tomlParser'
@@ -72,6 +73,7 @@ export default async function Home() {
       <Articles articles={posts} />
       <OSS ossinfo={data.oss} />
       <EduComponent educations={data.education} />
+      <ScholarShip events={data.scholarship} />
       <CareerComponent careers={data.career} />
       <EventComponent events={data.event} />
       <CopyRight year={data.copyright.year} name={data.copyright.name} />

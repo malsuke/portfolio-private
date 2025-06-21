@@ -62,6 +62,26 @@ desc = "理系"
 start = "2018-04"
 end = "2021-03"
 
+[[scholarship]]
+name = "ISACA Osaka Chapter Scholarship"
+desc = "2024年度 ISACA財団奨学金"
+start = "2024-10"
+link = "https://www.isaca.org/about-us/isaca-foundation/scholarship-recipients"
+
+[[scholarship]]
+name = "立命館大学 立命館大学課外自主活動団体助成制度"
+desc = "「サイバーセキュリティ人材の育成」というテーマでの助成"
+start = "2023-7"
+end = "2024-3"
+link = "https://alumni.ritsumei.jp/gift/student-voice/voice06-html/"
+
+[[scholarship]]
+name = "立命館大学 Challenge奨学金"
+desc = "「Webセキュリティを学習できるサービスの開発」というテーマでの助成"
+start = "2022-6"
+end = "2023-3"
+link = "https://www.ritsumei.ac.jp/scholarship/activity/activities/report.html/?id=68"
+
 [[career]]
 name = "ピクシブ株式会社 アルバイト"
 desc = ""
