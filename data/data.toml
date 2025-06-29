@@ -63,6 +63,11 @@ start = "2018-04"
 end = "2021-03"
 
 [[scholarship]]
+name = "中西奨学会 奨学金"
+start = "2025-04"
+link = "https://www.nkc-j.co.jp/foundation/scolarship/scolarship/"
+
+[[scholarship]]
 name = "ISACA Osaka Chapter Scholarship"
 desc = "2024年度 ISACA財団奨学金"
 start = "2024-10"
