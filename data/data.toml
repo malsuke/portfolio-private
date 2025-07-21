@@ -97,7 +97,7 @@ end = "2025-XX"
 name = "PRTIMES 長期インターン"
 desc = "PHP、PHPStan、BigQueryを用いたレガシーコード・開発環境の改善"
 start = "2024-2"
-end = "2024-XX"
+end = "2024-12"
 
 [[career]]
 name = "株式会社Flatt Security インターン"
