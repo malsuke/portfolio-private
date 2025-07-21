@@ -8,7 +8,7 @@ desc = "まるすけのポートフォリオサイトです"
 [profile]
 [profile.detail]
 role = "Backend Engineer"
-lang = "php, golang, python, typescript, Javascript"
+lang = "PHP, Golang, Python, Typescript, JavaScript"
 infra = "Docker, Network, AWS, Ansible, Terraform"
 
 [[oss]]
