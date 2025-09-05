@@ -1,7 +1,7 @@
 # 日本語のkeyはダブルクォーテーションで囲む必要があります
 
 [meta]
-imgUrl = "https://raw.githubusercontent.com/malsuke/malsuke/refs/heads/main/icon.png"
+imgUrl = "https://pbs.twimg.com/profile_images/1903001176968400898/0pWSotPJ_400x400.jpg"
 title = "malsuke's Portfolio"
 desc = "まるすけのポートフォリオサイトです"
 
@@ -18,7 +18,6 @@ url = "https://github.com/phpstan/phpstan-src/pull/3757"
 [[otherlink]]
 name = "はてなブログ"
 url = "https://malsan.hatenablog.com/"
-
 
 [[otherlink]]
 name = "旧はてなブログ"
@@ -43,6 +42,12 @@ url = "https://alumni.ritsumei.jp/gift/student-voice/voice06-html/"
 [profile.sns]
 github = "https://github.com/malsuke"
 twitter = "https://x.com/malsuke096"
+
+[[education]]
+name = "セキュリティ・サマー・サミット2025"
+desc = "「SQL文の構造変化に着目したSQLインジェクション脆弱性検出手法の提案」"
+start = "2025-07"
+end = "https://www.ipsj.or.jp/kenkyukai/event/csec110spt60.html"
 
 [[education]]
 name = "立命館大学大学院 情報理工学研究科 博士前期課程"
@@ -88,8 +93,25 @@ end = "2023-3"
 link = "https://www.ritsumei.ac.jp/scholarship/activity/activities/report.html/?id=68"
 
 [[career]]
+name = "ソニー株式会社 現場密着インターン"
+desc = "3week"
+start = "2025-8"
+end = "2025-9"
+
+[[career]]
+name = "日本総研 インターン"
+desc = "1week"
+start = "2025-8"
+
+[[career]]
+name = "株式会社Progate インターン"
+desc = "1week sgitコマンドのチーム開発"
+start = "2025-8"
+link = "https://malsan.hatenablog.com/entry/2025/08/10/081440"
+
+[[career]]
 name = "ピクシブ株式会社 アルバイト"
-desc = ""
+desc = "PHPアプリケーションのリファクタリング"
 start = "2024-11"
 end = "2025-XX"
 
@@ -130,6 +152,17 @@ name = "GMOインターネットグループ インフラエンジニアイン�
 desc = "1week"
 start = "2022-08"
 end = "2022-09"
+
+[[event]]
+name = "JANOG56 in 松江"
+desc = "企画編成委員"
+start = "2025-07"
+
+[[event]]
+name = "PHPカンファレンス関西2025"
+desc = "コアスタッフ | スピーカー「PHPStanへのコントリビュートを通して更にPHPStanに詳しくなった話」"
+start = "2025-07"
+link = "https://docs.google.com/presentation/d/17tVgyN83sqQP7DpDuRXXYDc9ZQE2c3O7Ei8_51gaWI8/edit"
 
 [[event]]
 name = "CNDS 2025"
