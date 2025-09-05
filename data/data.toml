@@ -47,7 +47,7 @@ twitter = "https://x.com/malsuke096"
 name = "セキュリティ・サマー・サミット2025"
 desc = "「SQL文の構造変化に着目したSQLインジェクション脆弱性検出手法の提案」"
 start = "2025-07"
-end = "https://www.ipsj.or.jp/kenkyukai/event/csec110spt60.html"
+link = "https://www.ipsj.or.jp/kenkyukai/event/csec110spt60.html"
 
 [[education]]
 name = "立命館大学大学院 情報理工学研究科 博士前期課程"
@@ -95,18 +95,18 @@ link = "https://www.ritsumei.ac.jp/scholarship/activity/activities/report.html/?
 [[career]]
 name = "ソニー株式会社 現場密着インターン"
 desc = "3week"
-start = "2025-8"
-end = "2025-9"
+start = "2025-08"
+end = "2025-09"
 
 [[career]]
 name = "日本総研 インターン"
 desc = "1week"
-start = "2025-8"
+start = "2025-08"
 
 [[career]]
 name = "株式会社Progate インターン"
 desc = "1week sgitコマンドのチーム開発"
-start = "2025-8"
+start = "2025-08"
 link = "https://malsan.hatenablog.com/entry/2025/08/10/081440"
 
 [[career]]
