@@ -93,19 +93,24 @@ end = "2023-3"
 link = "https://www.ritsumei.ac.jp/scholarship/activity/activities/report.html/?id=68"
 
 [[career]]
-name = "ソニー株式会社 現場密着インターン"
+name = "NTTデータ 現場受入れ型インターンシップ"
+desc = "1week クラウドサービスへのパスキーの導入"
+start = "2025-09"
+
+[[career]]
+name = "ソニー株式会社 現場密着インターンシップ"
 desc = "3week"
 start = "2025-08"
 end = "2025-09"
 
 [[career]]
-name = "日本総研 インターン"
+name = "日本総研 インターンシップ"
 desc = "1week"
 start = "2025-08"
 
 [[career]]
-name = "株式会社Progate インターン"
-desc = "1week sgitコマンドのチーム開発"
+name = "株式会社Progate インターンシップ"
+desc = "1week gitコマンドのチーム開発"
 start = "2025-08"
 link = "https://malsan.hatenablog.com/entry/2025/08/10/081440"
 
