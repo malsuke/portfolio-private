@@ -159,6 +159,13 @@ start = "2022-08"
 end = "2022-09"
 
 [[event]]
+name = "セキュリティ・キャンプミニ（広島開催）2025"
+desc = "講師"
+start = "2025-10"
+link = "https://www.security-camp.or.jp/minicamp/hiroshima2025.html"
+
+
+[[event]]
 name = "JANOG56 in 松江"
 desc = "企画編成委員"
 start = "2025-07"
