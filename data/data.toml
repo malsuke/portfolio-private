@@ -159,7 +159,7 @@ start = "2022-08"
 end = "2022-09"
 
 [[event]]
-name = "セキュリティ・キャンプミニ（広島開催）2025"
+name = "セキュリティ・キャンプ2025ミニ（広島開催）"
 desc = "講師"
 start = "2025-10"
 link = "https://www.security-camp.or.jp/minicamp/hiroshima2025.html"
