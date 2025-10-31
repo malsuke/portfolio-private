@@ -41,11 +41,11 @@ url = "https://alumni.ritsumei.jp/gift/student-voice/voice06-html/"
 
 [profile.sns]
 github = "https://github.com/malsuke"
-# twitter = "https://x.com/malsuke096"
+twitter = "https://x.com/malsuke096"
 
 [[education]]
 name = "セキュリティ・サマー・サミット2025"
-desc = "「SQL文の構造変化に着目したSQLインジェクション脆弱性検出手法の提案」"
+desc = "「SQL文の構造変化に着目したSQLインジェクション脆弱性検出手法の提案」CSEC優秀学生研究賞"
 start = "2025-07"
 link = "https://www.ipsj.or.jp/kenkyukai/event/csec110spt60.html"
 
