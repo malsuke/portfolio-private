@@ -1,12 +1,6 @@
-import CareerComponent from '@/_components/common/Career'
 import CopyRight from '@/_components/common/CopyRight'
-import EduComponent from '@/_components/common/Edu'
-import EventComponent from '@/_components/common/Event'
 import Header from '@/_components/common/Header/Header'
-import OSS from '@/_components/common/OSS'
-import OtherLink from '@/_components/common/OtherLink'
-import ProfileComponent from '@/_components/common/Profile'
-import ScholarShip from '@/_components/common/ScholarShip'
+import Section from '@/_components/common/Section'
 import Articles from '@/_components/feature/Articles'
 import { getBlogItems, type ApiKeys } from '@/libs/hatenablog'
 import parseToml from '@/libs/tomlParser'
@@ -68,14 +62,14 @@ export default async function Home() {
   return (
     <>
       <Header {...data.meta} />
-      <ProfileComponent {...data.profile} />
-      <OtherLink Links={data.otherlink} />
+      <Section title="Profile" items={[data.profile]} type="profile" />
+      <Section title="Links" items={data.otherlink} type="otherlink" />
       <Articles articles={posts} />
-      <OSS ossinfo={data.oss} />
-      <EduComponent educations={data.education} />
-      <ScholarShip events={data.scholarship} />
-      <CareerComponent careers={data.career} />
-      <EventComponent events={data.event} />
+      <Section title="OSS Contribution" items={data.oss} type="oss" />
+      <Section title="Education" items={data.education} type="timeline" />
+      <Section title="SholarShip" items={data.scholarship} type="timeline" />
+      <Section title="Career" items={data.career} type="timeline" />
+      <Section title="Event" items={data.event} type="timeline" />
       <CopyRight year={data.copyright.year} name={data.copyright.name} />
     </>
   )
