@@ -1,7 +1,8 @@
 import CopyRight from '@/_components/common/CopyRight'
 import Header from '@/_components/common/Header/Header'
 import Section, { type SectionType } from '@/_components/common/Section'
-import { type ApiKeys } from '@/libs/hatenablog'
+import Articles from '@/_components/feature/Articles'
+import { getBlogItems, type ApiKeys } from '@/libs/hatenablog'
 import parseToml from '@/libs/tomlParser'
 
 const keys: ApiKeys = {
@@ -43,18 +44,18 @@ export async function generateMetadata() {
 }
 
 export default async function Home() {
-  // const posts = await getBlogItems(keys)
-  // const posts_2 = await getBlogItems(keys_2)
+  const posts = await getBlogItems(keys)
+  const posts_2 = await getBlogItems(keys_2)
 
-  // // postsとposts_2を結合する
-  // posts.push(...posts_2)
+  // postsとposts_2を結合する
+  posts.push(...posts_2)
 
-  // // 日付順にソート
-  // posts.sort((a, b) => {
-  //   if (a.updated < b.updated) return 1
-  //   if (a.updated > b.updated) return -1
-  //   return 0
-  // })
+  // 日付順にソート
+  posts.sort((a, b) => {
+    if (a.updated < b.updated) return 1
+    if (a.updated > b.updated) return -1
+    return 0
+  })
 
   const data = await parseToml()
 
@@ -75,38 +76,33 @@ export default async function Home() {
         type={SectionType.PROFILE}
       />
       <Section
-        title="Education"
-        items={data.education}
-        type={SectionType.TIMELINE}
-      />
-      <Section
         title="Links"
         items={data.otherlink}
         type={SectionType.OTHERLINK}
       />
-      {/* <Articles articles={posts} /> */}
+      <Section title="Career" items={data.career} type={SectionType.TIMELINE} />
       <Section
-        title="OSS Contribution"
-        items={data.oss}
-        type={SectionType.OSS}
+        title="Education"
+        items={data.education}
+        type={SectionType.TIMELINE}
       />
+      <Articles articles={posts} />
       <Section
         title="Research"
         items={data.research}
         type={SectionType.RESEARCH}
       />
       <Section
-        title="Speaker"
-        items={data.speaker}
-        type={SectionType.TIMELINE}
-      />
-      <Section
         title="SholarShip"
         items={data.scholarship}
         type={SectionType.TIMELINE}
       />
-      <Section title="Career" items={data.career} type={SectionType.TIMELINE} />
       <Section title="Event" items={data.event} type={SectionType.TIMELINE} />
+      <Section
+        title="OSS Contribution"
+        items={data.oss}
+        type={SectionType.OSS}
+      />
       <CopyRight year={data.copyright.year} name={data.copyright.name} />
     </>
   )

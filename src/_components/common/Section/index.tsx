@@ -9,7 +9,6 @@ import type {
   Profile,
   Research,
   ScholarShip,
-  Speaker,
 } from '@/types/data'
 import { Box, Typography } from '@mui/material'
 import Link from 'next/link'
@@ -25,7 +24,7 @@ type SectionProps =
   | {
       title: string
       type: 'timeline'
-      items: (Career | Education | Event | ScholarShip | Speaker)[]
+      items: (Career | Education | Event | ScholarShip)[]
     }
   | { title: string; type: 'profile'; items: [Profile] }
   | { title: string; type: 'oss'; items: OSS[] }
@@ -39,7 +38,7 @@ const Section: React.FC<SectionProps> = (props) => {
     switch (type) {
       case 'timeline':
         return items.map(
-          (item: Career | Education | Event | ScholarShip | Speaker, index) => (
+          (item: Career | Education | Event | ScholarShip, index) => (
             <Box key={index} display="flex" alignItems="center">
               <Box sx={{ my: 2, mr: 3, flex: 1 }}>
                 <Typography fontSize={13} textAlign="center">
@@ -100,7 +99,15 @@ const Section: React.FC<SectionProps> = (props) => {
         return (
           <>
             {Object.entries(profile.detail).map(([key, value]) => (
-              <Typography key={key} sx={{ mb: 0.5 }}>
+              <Typography
+                key={key}
+                sx={{
+                  mb: 0.5,
+                  opacity: 0.8,
+                  '@media screen and (max-width:600px)': { fontSize: 14 },
+                }}
+                fontSize={15}
+              >
                 {key}: {value}
               </Typography>
             ))}

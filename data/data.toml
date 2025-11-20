@@ -8,7 +8,8 @@ desc = "まるすけのポートフォリオサイトです"
 [profile]
 [profile.detail]
 "所属" = "立命館大学大学院 情報理工学研究科 計算機科学コース 博士前期課程 サイバーセキュリティ研究室"
-
+"専攻" = "計算機科学 / サイバーセキュリティ"
+Like = "PHP, PHPStan, Golang, Typescript, Python, Docker, Network, AWS, Ansible, Terraform"
 
 [[oss]]
 title = "PHPStan: Improve preg_split() function ReturnType #3757"
@@ -126,15 +127,15 @@ start = "2024-2"
 end = "2024-12"
 
 [[career]]
-name = "株式会社Flatt Security インターン"
-desc = "1week Webアプリケーションのセキュリティ診断体験"
-start = "2023-09"
-
-[[career]]
 name = "エヌ・エフ・ラボラトリーズ 長期インターン"
 desc = "Python、AWS、Ansible、Terraform、Dockerを用いたセキュリティ演習アプリケーションの開発"
 start = "2023-05"
 end = "2024-02"
+
+[[career]]
+name = "株式会社Flatt Security インターン"
+desc = "1week Webアプリケーションのセキュリティ診断体験"
+start = "2023-09"
 
 [[career]]
 name = "PIXIV SPRING BOOT CAMP 2023"
@@ -157,52 +158,24 @@ desc = "1week"
 start = "2022-08"
 end = "2022-09"
 
-[[speaker]]
+
+[[event]]
+name = "SecHack365 2025 全体アシスタント"
+link = "https://sechack365.nict.go.jp/" 
+start = "2025-06"
+end = "2026-03"
+
+[[event]]
 name = "セキュリティ・キャンプ2025ミニ（広島開催）"
 desc = "講師"
 start = "2025-10"
 link = "https://www.security-camp.or.jp/minicamp/hiroshima2025.html"
 
-[[speaker]]
+[[event]]
 name = "PHPカンファレンス関西2025"
 desc = "スピーカー「PHPStanへのコントリビュートを通して更にPHPStanに詳しくなった話」"
 start = "2025-07"
 link = "https://docs.google.com/presentation/d/17tVgyN83sqQP7DpDuRXXYDc9ZQE2c3O7Ei8_51gaWI8/edit"
-
-[[speaker]]
-name = "CNDS 2025"
-desc = "学生支援登壇 | コンテナを学習環境として貸し出す技術"
-start = "2025-05"
-link = "https://malsan.hatenablog.com/entry/2025/05/24/000320"
-
-[[speaker]]
-name = "PHPerKaigi 2025"
-desc = "スピーカー |リファクタリングでもPHPStan！？ Rectorと組み合わせてかっこいいリファクタリングしようぜ！"
-start = "2025-03"
-link = "https://fortee.jp/phperkaigi-2025/proposal/210076ce-b2ca-472d-a412-c74b7bdb3285"
-
-[[speaker]]
-name = "PHPカンファレンス名古屋2025"
-desc = "スピーカー |「PHPは脆弱」←これの原因と抜け出す方法について"
-start = "2025-02"
-link = "https://malsan.hatenablog.com/entry/2025/02/23/005720"
-
-[[speaker]]
-name = "セキュリティ・ミニキャンプ in 山梨 2024"
-desc = "講師"
-start = "2024-10"
-link = "https://www.security-camp.or.jp/minicamp/yamanashi2024.html"
-
-[[speaker]]
-name = "KC3 2022"
-desc = "勉強会名 : OWASP ZAPを使ってWebセキュリティに入門しよう"
-start = "2022-09"
-
-[[event]]
-name = "SecHack365 2025 全体アシスタント"
-link = "https://sechack365.nict.go.jp/" 
-start = "2023-10"
-end = "2024-02"
 
 [[event]]
 name = "JANOG56 in 松江"
@@ -210,10 +183,34 @@ desc = "企画編成委員"
 start = "2025-07"
 
 [[event]]
+name = "CNDS 2025"
+desc = "学生支援登壇 | コンテナを学習環境として貸し出す技術"
+start = "2025-05"
+link = "https://malsan.hatenablog.com/entry/2025/05/24/000320"
+
+[[event]]
+name = "PHPerKaigi 2025"
+desc = "スピーカー |リファクタリングでもPHPStan！？ Rectorと組み合わせてかっこいいリファクタリングしようぜ！"
+start = "2025-03"
+link = "https://fortee.jp/phperkaigi-2025/proposal/210076ce-b2ca-472d-a412-c74b7bdb3285"
+
+[[event]]
+name = "PHPカンファレンス名古屋2025"
+desc = "スピーカー |「PHPは脆弱」←これの原因と抜け出す方法について"
+start = "2025-02"
+link = "https://malsan.hatenablog.com/entry/2025/02/23/005720"
+
+[[event]]
 name = "JANOG55 in 京都"
 desc = "ORGスタッフ | 野良BoF実施「【若者向け】みんな学生時代何してた？若手エンジニアの成長戦略について議論するBoF」 "
 start = "2025-01"
 link = "https://docs.google.com/presentation/d/1WOXbJo6fzrUozjyZ6DYWz_o2RImbCYIy33ptF8NW7tU"
+
+[[event]]
+name = "セキュリティ・ミニキャンプ in 山梨 2024"
+desc = "講師"
+start = "2024-10"
+link = "https://www.security-camp.or.jp/minicamp/yamanashi2024.html"
 
 [[event]]
 name = "YAPC::Hakodate 2024"
@@ -295,6 +292,11 @@ name = "第7回千葉大学バグハンティングコンテスト"
 desc = "優秀賞"
 start = "2022-08"
 end = "2022-10"
+
+[[event]]
+name = "KC3 2022"
+desc = "勉強会名 : OWASP ZAPを使ってWebセキュリティに入門しよう"
+start = "2022-09"
 
 [[event]]
 name = "立命館守山課題研究アドバイザー"
