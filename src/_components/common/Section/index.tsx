@@ -7,20 +7,30 @@ import type {
   OSS,
   OtherLinks,
   Profile,
+  Research,
   ScholarShip,
+  Speaker,
 } from '@/types/data'
 import { Box, Typography } from '@mui/material'
 import Link from 'next/link'
+
+export type SectionType =
+  | 'timeline'
+  | 'profile'
+  | 'oss'
+  | 'otherlink'
+  | 'research'
 
 type SectionProps =
   | {
       title: string
       type: 'timeline'
-      items: (Career | Education | Event | ScholarShip)[]
+      items: (Career | Education | Event | ScholarShip | Speaker)[]
     }
   | { title: string; type: 'profile'; items: [Profile] }
   | { title: string; type: 'oss'; items: OSS[] }
   | { title: string; type: 'otherlink'; items: OtherLinks[] }
+  | { title: string; type: 'research'; items: Research[] }
 
 const Section: React.FC<SectionProps> = (props) => {
   const { title, type, items } = props
@@ -29,7 +39,7 @@ const Section: React.FC<SectionProps> = (props) => {
     switch (type) {
       case 'timeline':
         return items.map(
-          (item: Career | Education | Event | ScholarShip, index) => (
+          (item: Career | Education | Event | ScholarShip | Speaker, index) => (
             <Box key={index} display="flex" alignItems="center">
               <Box sx={{ my: 2, mr: 3, flex: 1 }}>
                 <Typography fontSize={13} textAlign="center">
@@ -167,6 +177,54 @@ const Section: React.FC<SectionProps> = (props) => {
                 {item.url}
               </Typography>
             </Link>
+          </Box>
+        ))
+      case 'research':
+        return items.map((item: Research, index) => (
+          <Box key={index} display="flex" alignItems="center">
+            <Box sx={{ my: 2, mr: 3, flex: 1 }}>
+              <Typography fontSize={13} textAlign="center">
+                {item.date}
+              </Typography>
+            </Box>
+            <Box sx={{ my: 2, flex: 4 }}>
+              <Typography
+                fontSize={16}
+                sx={{
+                  '@media screen and (max-width:600px)': { fontSize: 13 },
+                }}
+              >
+                {item.title}
+              </Typography>
+              {item.desc && (
+                <Typography
+                  sx={{
+                    opacity: 0.8,
+                    '@media screen and (max-width:600px)': { fontSize: 12 },
+                  }}
+                  fontSize={13}
+                >
+                  {item.desc}
+                </Typography>
+              )}
+              {item.link && (
+                <Typography
+                  fontSize={12}
+                  sx={{
+                    '@media screen and (max-width:600px)': { fontSize: 13 },
+                  }}
+                >
+                  <a
+                    style={{ color: '#1a73e8' }}
+                    href={item.link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    link
+                  </a>
+                </Typography>
+              )}
+            </Box>
           </Box>
         ))
       default:

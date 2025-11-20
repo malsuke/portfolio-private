@@ -3,9 +3,11 @@ export type Toml = {
   profile: Profile
   otherlink: OtherLinks[]
   oss: OSS[]
+  research: Research[]
   education: Education[]
   scholarship: ScholarShip[]
   career: Career[]
+  speaker: Speaker[]
   event: Event[]
   copyright: CopyRight
 }
@@ -68,10 +70,25 @@ export type Career = {
   end: string
 }
 
+export type Speaker = {
+  name: string
+  desc: string
+  start: string
+  end?: string
+  link?: string
+}
+
 export type Event = {
   name: string
   desc: string
   start: string
   end: string
+  link?: string
+}
+
+export type Research = {
+  title: string
+  desc?: string
+  date: string
   link?: string
 }
