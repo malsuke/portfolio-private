@@ -80,13 +80,13 @@ export default async function Home() {
         items={data.otherlink}
         type={SectionType.OTHERLINK}
       />
+      <Articles articles={posts} />
       <Section title="Career" items={data.career} type={SectionType.TIMELINE} />
       <Section
         title="Education"
         items={data.education}
         type={SectionType.TIMELINE}
       />
-      <Articles articles={posts} />
       <Section
         title="Research"
         items={data.research}
