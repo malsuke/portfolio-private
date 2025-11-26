@@ -9,7 +9,7 @@ desc = "まるすけのポートフォリオサイトです"
 [profile.detail]
 "所属" = "立命館大学大学院 情報理工学研究科 計算機科学コース 博士前期課程 サイバーセキュリティ研究室"
 "専攻" = "計算機科学 / サイバーセキュリティ"
-Like = "PHP, PHPStan, Golang, Typescript, Python, Docker, Network, AWS, Ansible, Terraform"
+Like = "PHP, PHPStan, Golang, TypeScript, Python, Docker, Network, AWS, Ansible, Terraform"
 
 [[oss]]
 title = "PHPStan: Improve preg_split() function ReturnType #3757"
