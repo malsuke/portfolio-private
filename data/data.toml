@@ -16,16 +16,16 @@ title = "PHPStan: Improve preg_split() function ReturnType #3757"
 url = "https://github.com/phpstan/phpstan-src/pull/3757"
 
 [[research]]
-title = "セキュリティ・サマー・サミット2025"
-desc = "「SQL文の構造変化に着目したSQLインジェクション脆弱性検出手法の提案」石田優希、上原哲太郎 | CSEC優秀学生研究賞"
-date = "2025-07"
-link = "https://www.ipsj.or.jp/kenkyukai/event/csec110spt60.html"
-
-[[research]]
 title = "2026年 暗号と情報セキュリティシンポジウム（SCIS2026）"
 desc = "「脆弱性混入要因の特定に向けたGitHub Pull Requestに含まれる特徴量の分析」石田優希、上原哲太郎"
 date = "2026-01"
 link = "https://www.iwsec.org/scis/2026/poster.html"
+
+[[research]]
+title = "セキュリティ・サマー・サミット2025"
+desc = "「SQL文の構造変化に着目したSQLインジェクション脆弱性検出手法の提案」石田優希、上原哲太郎 | CSEC優秀学生研究賞"
+date = "2025-07"
+link = "https://www.ipsj.or.jp/kenkyukai/event/csec110spt60.html"
 
 [[otherlink]]
 name = "はてなブログ"
