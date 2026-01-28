@@ -112,6 +112,18 @@ const Section: React.FC<SectionProps> = (props) => {
               </Typography>
             ))}
             {profile.sns && <SocialLinks profiles={profile.sns} />}
+            <Typography
+              sx={{
+                mt: 2,
+                color: 'red',
+                '@media screen and (max-width:600px)': { fontSize: 14 },
+              }}
+              fontSize={15}
+            >
+              リクルートお待ちしております
+              <br />
+              連絡先: is0603xx[アット]ed.ritsumei.ac.jp
+            </Typography>
           </>
         )
       case 'oss':
