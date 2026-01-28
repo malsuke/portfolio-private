@@ -120,7 +120,9 @@ const Section: React.FC<SectionProps> = (props) => {
               }}
               fontSize={15}
             >
-              リクルートお待ちしております
+              27卒として就職活動中です。
+              <br />
+              採用をご検討いただける場合は、お気軽にご連絡ください。
               <br />
               連絡先: is0603xx[アット]ed.ritsumei.ac.jp
             </Typography>
